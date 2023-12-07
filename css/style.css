@@ -211,6 +211,9 @@ nav .navbar-toggler i {
     font-size: 20px;
 }
 
+body:has(.home.active) .navbar-toggler i {
+    color: #fff !important;
+}
 
 /* <!--    ----        Start Header Section   -----  )=> --> */
 header {
@@ -252,8 +255,7 @@ header .typing {
 
 .typing::after {
     content: "";
-    animation: typing 12s infinite ease;
-
+    animation: typing 12s infinite linear;
 }
 
 /* Typing Frame */
@@ -891,8 +893,17 @@ a.bt {
     right: 60px;
     bottom: 60px;
     opacity: 0;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
     transition: all .5s ease;
+}
+
+#team .social-icons .icon {
+    opacity: 0;
+    transition: opacity .5s .1s;
+}
+
+#team .card:hover .social-icons .icon {
+    opacity: 1;
 }
 
 #team .card .card-img img {
