@@ -680,9 +680,12 @@ a.bt {
 
 
 
-
-
 /* <!--    ----        Start Portfolio Section   -----  )=> --> */
+
+.portfolio-nav {
+    background-color: white;
+    box-shadow: none;
+}
 
 /* modal */
 .modal {
